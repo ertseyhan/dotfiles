@@ -38,8 +38,7 @@ These are my personal dotfiles for my laptop which is running on [Arch Linux](ht
 
    - [firefox](https://www.mozilla.org/en-US/firefox/desktop/): web browser
       - [Dictionary Anywhere](http://add0n.com/dictionary.html): Floating multilingual Google Translate panel
-      - [GitHub Hovercard](https://justineo.github.io/github-hovercard/): Provides neat user/repo/issue hovercards for 
-GitHub
+      - [GitHub Hovercard](https://justineo.github.io/github-hovercard/): Provides neat user/repo/issue hovercards for GitHub
       - [Octotree](https://github.com/buunguyen/octotree): Code tree for GitHub and GitLab
       - [uBlock Origin](https://github.com/gorhill/uBlock): An efficient advertisement blocker
       - [Stylish](https://userstyles.org): User style manager
@@ -47,6 +46,7 @@ GitHub
          - [DarkSearch for Google](https://userstyles.org/styles/118959/darksearch-for-google)
          - [DarkTube](https://userstyles.org/styles/117673/darktube)
          - [GitHub Dark](https://userstyles.org/styles/37035/github-dark)
+		 - [Stack Overflow Dark](https://userstyles.org/styles/35345/stackoverflow-dark)
 
       - [FT DeepDark](https://addons.mozilla.org/en-US/firefox/addon/ft-deepdark/): Main ff theme
       - [Arc Dark](https://github.com/horst3180/arc-firefox-theme): Alternative to FT DeepDark theme
