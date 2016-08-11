@@ -16,7 +16,8 @@ These are my personal dotfiles for my laptop which is running on [Arch Linux](ht
    - Fonts
       - [powerline](https://github.com/powerline/fonts)
       - [font-awesome](http://fontawesome.io/)
-      - DroidSans
+	  - [Hack](https://github.com/chrissimpkins/Hack)
+      - Droid Sans
       - Roboto
       - ..
 
