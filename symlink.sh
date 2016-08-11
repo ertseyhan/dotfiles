@@ -55,3 +55,6 @@ ln -s $dotfiles/yabar/yabar.conf $HOME/.config/yabar/yabar.conf
 ln -s $dotfiles/zsh/zshrc $HOME/.zshrc
 ln -s $dotfiles/zsh/themes $HOME/.zsh/themes
 ln -s $dotfiles/zsh/aliases $HOME/.zsh/zsh_aliases
+
+# wallpapers
+ln -s $dotfiles/images $HOME/Pictures
