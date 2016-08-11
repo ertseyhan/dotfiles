@@ -1,0 +1,32 @@
+# PACMAN 
+alias update='sudo pacman -Syyu'
+alias install='sudo pacman -S'
+alias search='pacman -Ss'
+alias remove='sudo pacman -Rs'
+alias clean='sudo pacman -Scc'
+alias orphan='sudo pacman -Rs $(pacman -Qtdq)'
+alias stayonmypc='sudo pacman -D --asexp'
+alias fuckoff='sudo pacman -D --asdep'
+alias pacinf='pacman -Si'
+alias searchlocal='pacman -Qs'
+alias listfiles='pacman -Ql'
+alias whoisorphan='pacman -Qdt'
+
+# YAOURT
+alias yorphan='yaourt -Qtd'
+alias aurin='yaourt -S'
+alias aurse='yaourt -Ss'
+alias aurup='yaourt -Syua'
+alias aurinen='LC_ALL=C yaourt -S'
+alias Y='yaourt'
+alias aurinf='yaourt -Si'
+
+# GIT
+alias gclone='git clone'
+alias gpull='git pull'
+alias gcommit='git commit -m'
+alias gpush='git push'
+alias gadd='git add'
+
+# Colored cat output
+alias catc='pygmentize -g'
