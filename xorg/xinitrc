@@ -2,7 +2,7 @@
 eval $(dbus-launch --sh-syntax --exit-with-session)
 
 # Set wallpaper
-feh --bg-fill ~/Pictures/Wallpaper.png
+feh --randomize --bg-fill ~/Pictures/Wallpapers
 
 # Start PulseAudio
 start-pulseaudio-x11 &
