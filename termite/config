@@ -1,0 +1,39 @@
+[options]
+font = hack 9
+
+scroll_on_output = false
+scroll_on_keystroke = true
+audible_bell = false
+mouse_autohide = true
+allow_bold = true
+dynamic_title = true
+urgent_on_bell = true
+clickable_url = true
+search_wrap = true
+scrollback_lines = 10000
+scrollback_lines = 10000
+
+cursor_blink = off
+cursor_shape = block
+
+browser = firefox
+
+[colors]
+background = #0A0A0A
+foreground = #A5A5A5
+foreground_bold = #cccccc
+
+cursor = #595959
+highlight = #515151
+
+color1 = #f27779
+color10 = #99cc99
+color12 = #6699cc
+color13 = #cc99cc
+color14 = #66cccc
+color2 = #99cc99
+color4 = #6699cc
+color5 = #cc99cc
+color6 = #66cccc
+color8 = #A5A5A5
+color9 = #f17779

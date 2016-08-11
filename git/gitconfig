@@ -1,0 +1,8 @@
+[user]
+	name = ertseyhan
+	email = hi@ertugrulseyhan.com
+	signingkey = 444C162F7CCA8974
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg2

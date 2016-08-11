@@ -1,0 +1,141 @@
+#
+# bspwm hotkeys
+#
+
+# Quit
+alt + shift + q
+	exitbox
+
+# Close window
+alt + shift + w
+	bspc node -c
+
+# Toggle monocle
+alt + space
+	bspc desktop -l next
+
+# Balance tree
+alt + b
+	bspc desktop -B
+
+# Toggle tile
+alt + {s,f,t}
+	bspc node -t {floating,fullscreen,tiled}
+
+# Lock node
+alt + shift + p
+	bspc node -t private
+
+# Last workspace
+alt + {grave,Tab}
+	bspc {node,desktop} -f last
+
+# Move current window to largest space
+alt + m
+	bspc node -s biggest
+
+# Select windows, or move
+alt + {_,shift + }{Left,Down,Up,Right}
+	bspc node -{f,s} {left,down,up,right}
+
+# Focus
+alt + {_,shift + }c
+	bspc node -f {next,prev}
+
+# Circulate
+alt + ctrl + {comma,period}
+	bspc desktop -C {backward,forward}
+	
+# Rotate leaves of tree
+alt + shift + {comma,period}
+	bspc desktop -R {90,270}
+
+# Mirror and flip leaves of tree
+alt + {comma,period}
+	bspc desktop -F {horizontal,vertical}
+	
+# Toggle pseudotiled (floating in tile)
+alt + shift + space 
+	bspc node -t pseudo_tiled
+	
+# Lock a window from closing
+alt + Escape
+	bspc node -t locked 
+
+# Presel window for splitting
+alt + ctrl + {Left,Down,Up,Right}
+	bspc node -p {left,down,up,right}
+
+# Move window into presel position
+alt + shift {a,s,d,f}
+	bspc node -w {left.manual,down.manual,up.manual,right.manual}
+
+# Resize floating windows
+alt + shift + {h,j,k,l}
+	bspc node -e {left -10,down +10,up -10,right +10}
+
+# Resize floating windows
+super + alt + shift + {h,j,k,l}
+	bspc node -e {right -10,up +10,down -10,left +10}
+
+# Set splitting ratio of windows
+alt + ctrl + {1-9}
+	bspc node -r 0.{1-9}
+
+# Focus or move window to desktops
+alt + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} ^{1-9,10}
+	
+# Change window gap
+alt + {minus,asterisk}
+ 	bspc config -d focused window_gap $((`bspc config -d focused 
+window_gap` {+,-} 2 ))
+
+# Focus window
+~button1
+	bspc pointer -g focus
+# Move or resize window
+alt + button{1-3}
+	bspc pointer -g {move,resize_side,resize_corner}
+
+# Needed for ^^^^
+alt + !button{1-3}
+	bspc pointer -t %i %i
+
+alt + @button{1-3}
+	bspc pointer -u
+
+# Shut Down Dialog
+
+super + shift + q
+	oblogout
+
+# Print screen
+
+Print
+	~/.bin/screenshot
+
+# wm independent hotkeys
+
+alt + Return
+	termite
+
+alt + shift + Return
+	termite -e tmux
+
+alt + r
+	launcher
+
+# Volume Control via pulseaudio-ctl
+XF86AudioRaiseVolume
+	pulseaudio-ctl up
+
+XF86AudioLowerVolume
+	pulseaudio-ctl down
+
+XF86AudioMute
+	pulseaudio-ctl mute
+
+# make sxhkd reload its configuration files:
+super + Escape
+pkill -USR1 -x sxhkd

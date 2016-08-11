@@ -1,0 +1,18 @@
+ZSH_THEME="punctual"
+
+ZSH=/usr/share/oh-my-zsh
+DISABLE_AUTO_UPDATE="true"
+ENABLE_CORRECTION="true"
+COMPLETION_WAITING_DOTS="true"
+ZSH_CUSTOM=~/.zsh/
+
+plugins=(zsh-output-highlighting zsh-syntax-highlighting colored-man command-not-found dirhistory)
+
+source $ZSH/oh-my-zsh.sh
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Termite dircolors
+eval $(dircolors ~/.dircolors)
+
+source $ZSH_CUSTOM/zsh_aliases
+setopt COMBINING_CHARS

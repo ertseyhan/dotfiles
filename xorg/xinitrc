@@ -1,0 +1,38 @@
+# Start dbus-launch
+eval $(dbus-launch --sh-syntax --exit-with-session)
+
+# Set wallpaper
+feh --bg-fill ~/Pictures/Wallpaper.png
+
+# Start PulseAudio
+start-pulseaudio-x11 &
+
+# Start Polkit
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+# Start Unclutter
+unclutter &
+
+# Start MPD
+mpd &
+
+# Start Caffeine
+caffeine &
+
+# Set fonts
+xset +fp /usr/share/fonts/local
+xset +fp ~/.fonts
+xset fp rehash
+
+# Turn NumLock on
+numlockx &
+
+# Set keyboard layout
+setxkbmap -layout tr
+
+# Cursor
+xsetroot -cursor_name left_ptr &
+
+# Execute wm with keybindings
+sxhkd &
+exec bspwm
