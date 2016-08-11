@@ -46,6 +46,7 @@ ln -s $dotfiles/xorg/xinitrc $HOME/.xinitrc
 ln -s $dotfiles/xorg/bashrc $HOME/.bashrc
 ln -s $dotfiles/xorg/Xresources $HOME/.Xresources
 ln -s $dotfiles/xorg/Xdefaults $HOME/.Xdefaults
+ln -s $dotfiles/xorg/profile $HOME/.profile
 
 # yabar
 ln -s $dotfiles/yabar/yabar.conf $HOME/.config/yabar/yabar.conf
