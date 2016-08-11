@@ -1,5 +1,22 @@
 #!/bin/sh
 
 pkill -x rofi
-rofi -show run -font "Source Sans Pro 8" -fg "#98A2B1" -bg "#1D2127" -hlfg "#1D2127" -hlbg "#98A2B1" -bc "#c0c0c0" -bw "6" font "Droid Sans Mono-9" -lines "5" -width '20' -hide-scrollbar -location "0" -terminal "st" -separator-style 
-"solid" >/dev/null
+
+rofi -show drun \
+     -font "Droid Sans 8" \
+     -lines 12 \
+     -location 1 \
+     -yoffset 13 \
+     -xoffset 0 \
+     -width 200 \
+     -hide-scrollbar true \
+     -modi drun,window \
+     -sidebar-mode true \
+     -kb-mode-next Tab \
+     -display-drun "Run" \
+     -display-window "Switch to" \
+     -color-window "#191919, #191919, #191919" \
+     -color-normal "#191919, #BFBFBF, #191919, #394249, #BFBFBF" \
+     -color-active "#191919, #BFBFBF, #191919, #394249, #BFBFBF"
+
+>/dev/null
