@@ -1,4 +1,4 @@
-# Dotfiles
+<img src="https://raw.githubusercontent.com/jglovier/dotfiles-logo/master/dotfiles-logo.png" width="220" height="65" />
 
 These are my personal dotfiles for my laptop which is running on [Arch Linux](https://www.archlinux.org/) and is using
 [bspwm](https://github.com/baskerville/bspwm).
@@ -86,3 +86,5 @@ Copyright © 2016 Ertuğrul Seyhan
 
 This work is free. You can redistribute it and/or modify it under the terms of the Do What The Fuck You Want To Public 
 License, Version 2, as published by Sam Hocevar. See the COPYING file for more details.
+
+Dotfile logo comes from [here](https://github.com/jglovier/dotfiles-logo) and was created by Joel Glovier (jglovier).
