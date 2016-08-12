@@ -12,11 +12,11 @@ FPS=30                          # Frames Per Second [12-60]
 PRESET="ultrafast"              # Default "ultrafast" (x264 --help for preset list)
 CRF=10                          # Constant Rate Factor [0-51] (Lower is better quality)
 QMAX=10                         # Maximum Quantization [1-31] (Lower is better quality)
-FULLSCREEN="1366x768"          # Set your desktop resolution
-#DISPLAY=:0.1                    # Set to record specific monitor 0.0 or 0.1?
+FULLSCREEN="1920x1080"          # Set your desktop resolution
+#DISPLAY=:0.1                   # Set to record specific monitor 0.0 or 0.1?
 
-OUTPUT="/home/doublet/out.webm"
-TMP="/home/doublet/out.mkv"
+OUTPUT="/home/ertseyhan/screencast.webm"
+TMP="/home/ertseyhan/out.mkv"
 KEEP=false                      # Keep original mkv file after conversion [true|false]
 
 if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
