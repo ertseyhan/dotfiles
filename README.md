@@ -47,7 +47,8 @@ These are my personal dotfiles for my laptop which is running on [Arch Linux](ht
          - [DarkSearch for Google](https://userstyles.org/styles/118959/darksearch-for-google)
          - [DarkTube](https://userstyles.org/styles/117673/darktube)
          - [GitHub Dark](https://userstyles.org/styles/37035/github-dark)
-		 - [Stack Overflow Dark](https://userstyles.org/styles/35345/stackoverflow-dark)
+         - [Stack Overflow Dark](https://userstyles.org/styles/35345/stackoverflow-dark)
+         - [GitHub: better-sized tabs in code](https://userstyles.org/styles/70979/github-better-sized-tabs-in-code)
 
       - [FT DeepDark](https://addons.mozilla.org/en-US/firefox/addon/ft-deepdark/): Main ff theme
       - [Arc Dark](https://github.com/horst3180/arc-firefox-theme): Alternative to FT DeepDark theme
