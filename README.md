@@ -39,7 +39,6 @@ These are my personal dotfiles for my laptop which is running on [Arch Linux](ht
 
    - [firefox](https://www.mozilla.org/en-US/firefox/desktop/): web browser
       - [Dictionary Anywhere](http://add0n.com/dictionary.html): Floating multilingual Google Translate panel
-      - [GitHub Hovercard](https://justineo.github.io/github-hovercard/): Provides neat user/repo/issue hovercards for GitHub
       - [Octotree](https://github.com/buunguyen/octotree): Code tree for GitHub and GitLab
       - [uBlock Origin](https://github.com/gorhill/uBlock): An efficient advertisement blocker
       - [Stylish](https://userstyles.org): User style manager
