@@ -1,0 +1,42 @@
+#!/bin/sh
+# Color directory
+CD="$HOME/.Xresources"
+
+# Fetch the Colors
+BG=$(cat ${CD} | grep -i background | tail -c 8)
+FG=$(cat ${CD} | grep -i foreground | tail -c 8)
+
+# Fonts
+FONT1="Roboto Condensed-10:Bold"
+FONT2="tticonfont-10"
+
+# Panel 
+PW=250
+PH=48
+PX=835
+PY=516
+echo "%{c}%{A:s:}Kapat%{A}      %{A:r:}Yeniden Başlat%{A}      %{A:l:}Çıkış%{A}      %{A:q:}İptal%{A}" | lemonbar -g ${PW}x${PH}+${PX}+${PY} -f "$FONT1" -f "$FONT2" -B "$BG" -F "$FG" -dp | \
+    while :; do
+        read line
+        case $line in 
+            'q')
+                p=$(pgrep -n lemonbar)
+                kill $p 
+                exit 
+                ;;
+            'l')
+                bspc quit &
+                p=$(pgrep -n lemonbar)
+                kill $p 
+                exit                
+                ;;
+            's')
+		poweroff
+                exit
+                ;;
+            'r')
+                reboot
+                exit
+                ;;
+        esac
+    done
