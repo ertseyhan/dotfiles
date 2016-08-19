@@ -71,7 +71,7 @@ message, ...
    - [ranger](http://ranger.nongnu.org/) / [thunar](http://docs.xfce.org/xfce/thunar/start): file manager
    - [feh](http://feh.finalrewind.org/): image viewer
    - [vlc](https://www.videolan.org/vlc/): video player
-   - [zathura](https://pwmt.org/projects/zathura/): pdf viewer
+   - [evince](https://wiki.gnome.org/Apps/Evince): document viewer
    - [libreoffice](https://www.libreoffice.org/): office suite
    - [transmission](https://www.transmissionbt.com/): bittorent client
    - [Redshift](http://jonls.dk/redshift): adjust the color temperature according to the position of the sun
