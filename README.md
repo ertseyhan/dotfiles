@@ -19,7 +19,6 @@ These are my personal dotfiles for my laptop which is running on [Arch Linux](ht
 	  - [Hack](https://github.com/chrissimpkins/Hack)
       - Droid Sans
       - Roboto
-      - ..
 
    - GTK
       - [arc-gtk-theme](https://github.com/horst3180/arc-theme)
@@ -40,7 +39,7 @@ These are my personal dotfiles for my laptop which is running on [Arch Linux](ht
    - [firefox](https://www.mozilla.org/en-US/firefox/desktop/): web browser
       - [Dictionary Anywhere](http://add0n.com/dictionary.html): Floating multilingual Google Translate panel
       - [Octotree](https://github.com/buunguyen/octotree): Code tree for GitHub and GitLab
-      - [uBlock Origin](https://github.com/gorhill/uBlock): An efficient advertisement blocker
+      - [uBlock Origin](https://github.com/gorhill/uBlock): An efficient advertisement blocker with custom filter: 'https://*-edge-chat.facebook'
       - [Stylish](https://userstyles.org): User style manager
 
          - [DarkSearch for Google](https://userstyles.org/styles/118959/darksearch-for-google)
@@ -57,8 +56,7 @@ These are my personal dotfiles for my laptop which is running on [Arch Linux](ht
       - [buffers.pl](https://weechat.org/scripts/source/buffers.pl.html/): sidebar with list of buffers
       - [colorize_nicks.py](https://weechat.org/scripts/source/colorize_nicks.py.html/)
       - [tinyurl.py](https://weechat.org/scripts/source/tinyurl.py.html/): get tinyurl.com equivalent for ULRs
-      - [notify_send.pl](https://weechat.org/scripts/source/notify_send.pl.html/): send notifications on hl, private 
-message, ...
+      - [notify_send.pl](https://weechat.org/scripts/source/notify_send.pl.html/): send notifications on hl, private message...
 
 - Laptop specific
 
@@ -68,12 +66,15 @@ message, ...
 - Others
 
    - [pulseaudio](https://www.freedesktop.org/wiki/Software/PulseAudio/): sound system
-   - [ranger](http://ranger.nongnu.org/) / [thunar](http://docs.xfce.org/xfce/thunar/start): file manager
+   - [ranger](http://ranger.nongnu.org/): terminal file manager
+   - [thunar](http://docs.xfce.org/xfce/thunar/start): file manager with gui
    - [feh](http://feh.finalrewind.org/): image viewer
-   - [vlc](https://www.videolan.org/vlc/): video player
+   - [vlc](https://www.videolan.org/vlc/): media player
+   - [mpv](https://mpv.io/): media player
    - [evince](https://wiki.gnome.org/Apps/Evince): document viewer
    - [libreoffice](https://www.libreoffice.org/): office suite
    - [transmission](https://www.transmissionbt.com/): bittorent client
+   - [uGet](http://ugetdm.com/): download manager
    - [Redshift](http://jonls.dk/redshift): adjust the color temperature according to the position of the sun
 
 ## Hardware
