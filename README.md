@@ -72,9 +72,7 @@ These are my personal dotfiles for my laptop which is running on [Arch Linux](ht
    - [vlc](https://www.videolan.org/vlc/): media player
    - [mpv](https://mpv.io/): media player
    - [stremio](http://www.strem.io/): media center allowing to stream torrents
-
-      - [webtorrent](https://webtorrent.io/): stremio alternative for open source freaks
-
+   - [webtorrent](https://webtorrent.io/): stremio alternative for open source freaks
    - [evince](https://wiki.gnome.org/Apps/Evince): document viewer
    - [libreoffice](https://www.libreoffice.org/): office suite
    - [transmission](https://www.transmissionbt.com/): bittorent client
