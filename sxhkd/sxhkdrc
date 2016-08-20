@@ -7,135 +7,103 @@ alt + shift + q
 	exitbox
 
 # Close window
-alt + shift + w
+alt + {_,shift +} Escape
 	bspc node -c
 
 # Toggle monocle
 alt + space
 	bspc desktop -l next
 
+# Toggle tile
+alt + {s,f,t}
+    bspc node -t {floating,fullscreen,tiled}
+
+# Lock node
+alt + shift + p
+    bspc node -t private
+
+# Last desktop/workspace
+alt + {grave,Tab}
+	bspc {node,desktop} -f last
+
 # Balance tree
 alt + b
 	bspc desktop -B
 
-# Toggle tile
-alt + {s,f,t}
-	bspc node -t {floating,fullscreen,tiled}
+# Cut the window at..
+alt + shift + {a,s,w,d}
+	bspc window -p {left,down,up,right}
 
-# Lock node
-alt + shift + p
-	bspc node -t private
-
-# Last workspace
-alt + {grave,Tab}
-	bspc {node,desktop} -f last
-
-# Move current window to largest space
-alt + m
-	bspc node -s biggest
-
-# Select windows, or move
-alt + {_,shift + }{Left,Down,Up,Right}
-	bspc node -{f,s} {left,down,up,right}
-
-# Focus
-alt + {_,shift + }c
-	bspc node -f {next,prev}
-
-# Circulate
-alt + ctrl + {comma,period}
-	bspc desktop -C {backward,forward}
-	
-# Rotate leaves of tree
-alt + shift + {comma,period}
-	bspc desktop -R {90,270}
-
-# Mirror and flip leaves of tree
-alt + {comma,period}
-	bspc desktop -F {horizontal,vertical}
-	
-# Toggle pseudotiled (floating in tile)
-alt + shift + space 
-	bspc node -t pseudo_tiled
-	
-# Lock a window from closing
-alt + Escape
-	bspc node -t locked 
-
-# Presel window for splitting
-alt + ctrl + {Left,Down,Up,Right}
-	bspc node -p {left,down,up,right}
-
-# Move window into presel position
-alt + shift {a,s,d,f}
-	bspc node -w {left.manual,down.manual,up.manual,right.manual}
-
-# Resize floating windows
-alt + shift + {h,j,k,l}
-	bspc node -e {left -10,down +10,up -10,right +10}
-
-# Resize floating windows
-super + alt + shift + {h,j,k,l}
-	bspc node -e {right -10,up +10,down -10,left +10}
-
-# Set splitting ratio of windows
-alt + ctrl + {1-9}
-	bspc node -r 0.{1-9}
+# Focus or move window
+alt + {_,shift + }{a,s,w,d}
+	bspc window -{f,s} {left,down,up,right}
 
 # Focus or move window to desktops
 alt + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} ^{1-9,10}
-	
-# Change window gap
-alt + {minus,asterisk}
- 	bspc config -d focused window_gap $((`bspc config -d focused 
-window_gap` {+,-} 2 ))
 
-# Focus window
+# Resize the window by pushing
+alt + shift + {a,s,w,d}
+	bspc window -e {left,down,up,right} push
+
+# Resize the window by pulling
+alt + ctrl + {a,s,w,d}
+	bspc window -e {right,up,down,left} pull
+
+# Focus window next or prev
+alt + {_,shift + }c
+	bspc window -f {next,prev}
+
+# Move to previous or next desktop/workspace
+super + {1,2}
+	bspc desktop -f {prev,next}
+
+super + shift + {1,2}
+	bspc monitor -f {prev,next}
+
+# Cancel preselection for splitting
+super + ctrl + {_,shift + }escape
+	bspc {window -p cancel,desktop -c}
+
+# Set splitting ratio of windows
+super + ctrl + {1-9}
+	bspc window -r 0.{1-9}
+
+# Focus or move window to desktops
+alt + {_,shift + }{1-9,0}
+	bspc {desktop -f,window -d} {1-9,0}
+
 ~button1
 	bspc pointer -g focus
+
 # Move or resize window
 alt + button{1-3}
 	bspc pointer -g {move,resize_side,resize_corner}
 
-# Needed for ^^^^
-alt + !button{1-3}
-	bspc pointer -t %i %i
-
-alt + @button{1-3}
-	bspc pointer -u
-
-# Shut Down Dialog
-
-super + shift + q
-	oblogout
-
 # Print screen
-
 Print
-	~/.bin/screenshot
+    ~/.bin/screenshot
 
 # wm independent hotkeys
-
 alt + Return
-	termite
+    termite
 
 alt + shift + Return
-	termite -e tmux
+    termite -e tmux
 
 alt + r
-	launcher
+    launcher
 
 # Volume Control via pulseaudio-ctl
 XF86AudioRaiseVolume
-	pulseaudio-ctl up
+    pulseaudio-ctl up
 
 XF86AudioLowerVolume
-	pulseaudio-ctl down
+    pulseaudio-ctl down
 
 XF86AudioMute
-	pulseaudio-ctl mute
+    pulseaudio-ctl mute
 
 # make sxhkd reload its configuration files:
-super + Escape
-pkill -USR1 -x sxhkd
+super + F1
+    pkill -USR1 -x sxhkd
