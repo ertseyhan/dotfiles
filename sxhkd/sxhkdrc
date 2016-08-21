@@ -94,6 +94,15 @@ alt + shift + Return
 alt + r
     launcher
 
+XF86TouchpadToggle
+	touchpad
+
+XF86MonBrightnessUp
+	light -A 5
+
+XF86MonBrightnessDown
+	light -U 5
+
 # Volume Control via pulseaudio-ctl
 XF86AudioRaiseVolume
     pulseaudio-ctl up
