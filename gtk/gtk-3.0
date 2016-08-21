@@ -9,6 +9,7 @@ gtk-button-images=0
 gtk-cursor-theme-name=pixelfun3
 gtk-cursor-theme-size=0
 gtk-toolbar-icon-size=GTK_ICON_SIZE_LARGE_TOOLBAR
+gtk-decoration-layout=menu;
 gtk-application-prefer-dark-theme = true
 gtk-enable-event-sounds=1
 gtk-enable-input-feedback-sounds=1
