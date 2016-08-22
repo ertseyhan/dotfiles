@@ -8,6 +8,7 @@ ln -s $dotfles/redshift/redshift.conf $HOME/.config/.redshift.conf
 
 # gtk
 ln -s $dotfiles/gtk/gtk-3.0 $HOME/.config/gtk-3.0/settings.ini
+ln -s $dotfiles/gtk/gtk-2.0 $Home/.gtkrc-2.0
 
 # bspwm
 ln -s $dotfiles/bspwm/bspwmrc $HOME/.config/bspwm/bspwmrc
