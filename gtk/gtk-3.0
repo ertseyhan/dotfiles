@@ -1,6 +1,6 @@
 [Settings]
 gtk-font-name=Roboto Medium 8
-gtk-theme-name=Arc-Darker
+gtk-theme-name=Arc-Dark
 gtk-icon-theme-name=Arc
 gtk-fallback-icon-theme=Moka
 gtk-toolbar-style=GTK_TOOLBAR_ICONS
