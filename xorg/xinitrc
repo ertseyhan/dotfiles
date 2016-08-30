@@ -1,5 +1,5 @@
 # Start dbus-launch
-eval $(dbus-launch --sh-syntax --exit-with-session)
+dbus-launch --sh-syntax --exit-with-session &
 
 # Set wallpaper
 feh --randomize --bg-fill ~/Pictures/Wallpapers
