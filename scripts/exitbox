@@ -10,25 +10,26 @@ FG=$(cat ${CD} | grep -i foreground | tail -c 8)
 FONT1="Roboto Condensed-10:Bold"
 FONT2="tticonfont-10"
 
-# Panel 
+# Panel
 PW=250
 PH=48
 PX=835
 PY=516
-echo "%{c}%{A:s:}Kapat%{A}      %{A:r:}Yeniden Başlat%{A}      %{A:l:}Çıkış%{A}      %{A:q:}İptal%{A}" | lemonbar -g ${PW}x${PH}+${PX}+${PY} -f "$FONT1" -f "$FONT2" -B "$BG" -F "$FG" -dp | \
+
+echo "%{c}%{A:s:}Poweroff%{A}      %{A:r:}Reboot%{A}      %{A:l:}Logout%{A}      %{A:q:}Cancel%{A}" | lemonbar -g ${PW}x${PH}+${PX}+${PY} -f "$FONT1" -f "$FONT2" -B "$BG" -F "$FG" -dp | \
     while :; do
         read line
-        case $line in 
+        case $line in
             'q')
                 p=$(pgrep -n lemonbar)
-                kill $p 
-                exit 
+                kill $p
+                exit
                 ;;
             'l')
                 bspc quit &
                 p=$(pgrep -n lemonbar)
-                kill $p 
-                exit                
+                kill $p
+                exit
                 ;;
             's')
 		poweroff
