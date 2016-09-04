@@ -11,6 +11,7 @@ These are my personal dotfiles for my laptop which is running on [Arch Linux](ht
 
       - [yabar](https://github.com/geommer/yabar): status bar
       - [rofi](https://github.com/DaveDavenport/rofi): program launcher
+      - [i3fancy-lock](lock screen)
 
    - [dunst](http://www.knopwob.org/dunst/): notification system
    - Fonts
