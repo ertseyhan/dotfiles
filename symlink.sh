@@ -4,7 +4,7 @@ dotfiles=$HOME/Projects/dotfiles
 mkdir -p $HOME/.config $HOME/gtk-3.0 $HOME/bspwm $HOME/sxhkd $HOME/.config/termite \
 		 $HOME/.config/yabar $HOME/.zsh
 
-sudo mkdir -p /usr/lib/systemd/screenlock.service
+sudo mkdir -p /usr/lib/systemd
 
 # compton
 ln -s $dotfiles/compton/compton.conf $HOME/.config/.compton.conf
