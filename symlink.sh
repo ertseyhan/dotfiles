@@ -1,5 +1,11 @@
 dotfiles=$HOME/Projects/dotfiles
 
+# Make directories as needed
+mkdir -p $HOME/.config $HOME/gtk-3.0 $HOME/bspwm $HOME/sxhkd $HOME/.config/termite \
+		 $HOME/.config/yabar $HOME/.zsh
+
+sudo mkdir -p /usr/lib/systemd/screenlock.service
+
 # compton
 ln -s $dotfiles/compton/compton.conf $HOME/.config/.compton.conf
 
