@@ -56,3 +56,6 @@ ln -s $dotfiles/zsh/aliases $HOME/.zsh/zsh_aliases
 
 # wallpapers
 ln -s $dotfiles/images $HOME/Pictures
+
+# screen lock
+sudo ln -s $dotfiles/i3fancy-lock/screenlock.service /usr/lib/systemd/screenlock.service
