@@ -35,9 +35,6 @@ ln -s $dotfiles/nano/nanorc $HOME/.nanorc
 # pyradio
 sudo ln -s $dotfiles/pyradio/stations.csv /usr/lib/python3.5/site-packages/pyradio/stations.csv
 
-# zathura
-ln -s $dotfiles/zathura $HOME/.config/zathura
-
 # termite
 ln -s $dotfiles/termite/config $HOME/.config/termite/config
 ln -s $dotfiles/termite/dircolors $HOME/.dircolors
