@@ -41,6 +41,9 @@ These are my personal dotfiles for my laptop which is running on [Arch Linux](ht
       - [Dictionary Anywhere](http://add0n.com/dictionary.html): Floating multilingual Google Translate panel
       - [Octotree](https://github.com/buunguyen/octotree): Code tree for GitHub and GitLab
       - [uBlock Origin](https://github.com/gorhill/uBlock): An efficient advertisement blocker with custom filter: 'https://*-edge-chat.facebook'
+      - [CleanLinks](https://github.com/diegocr/CleanLinks): Converts obfuscated/nested links to genuine clean links.
+      - [Cutyfox URL Shortener](https://addons.mozilla.org/en-US/firefox/addon/cutyfox-url-shortener-googl-is): Shortens the long link of the website and copies the short version into clipboard
+      - [Search By Image](https://addons.mozilla.org/en-US/firefox/addon/search-by-image-by-google): Initiate a Google search using any image on the web with a simple click
       - [Stylish](https://userstyles.org): User style manager
 
          - [DarkSearch for Google](https://userstyles.org/styles/118959/darksearch-for-google)
