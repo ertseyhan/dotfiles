@@ -17,7 +17,7 @@ These are my personal dotfiles for my laptop which is running on [Arch Linux](ht
    - Fonts
       - [powerline](https://github.com/powerline/fonts)
       - [font-awesome](http://fontawesome.io/)
-	  - [Hack](https://github.com/chrissimpkins/Hack)
+      - [Hack](https://github.com/chrissimpkins/Hack)
       - Droid Sans
       - Roboto
 
@@ -27,8 +27,8 @@ These are my personal dotfiles for my laptop which is running on [Arch Linux](ht
 
 - Console environment
 
-   - [termite](https://github.com/thestinger/termite): terminal emulator
-   - [zsh](http://www.zsh.org/): command-line shell
+   - [Termite](https://github.com/thestinger/termite): terminal emulator
+   - [Zsh](http://www.zsh.org/): command-line shell
 
       - [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh): theme and plugins
       - [zsh-completions](https://github.com/zsh-users/zsh-completions): additional completion definitions
@@ -37,7 +37,7 @@ These are my personal dotfiles for my laptop which is running on [Arch Linux](ht
 
 - Internet
 
-   - [firefox](https://www.mozilla.org/en-US/firefox/desktop/): web browser
+   - [Firefox](https://www.mozilla.org/en-US/firefox/desktop/): web browser
       - [Dictionary Anywhere](http://add0n.com/dictionary.html): Floating multilingual Google Translate panel
       - [Octotree](https://github.com/buunguyen/octotree): Code tree for GitHub and GitLab
       - [uBlock Origin](https://github.com/gorhill/uBlock): An efficient advertisement blocker with custom filter: 'https://*-edge-chat.facebook'
@@ -55,7 +55,7 @@ These are my personal dotfiles for my laptop which is running on [Arch Linux](ht
       - [FT DeepDark](https://addons.mozilla.org/en-US/firefox/addon/ft-deepdark/): Main ff theme
       - [Arc Dark](https://github.com/horst3180/arc-firefox-theme): Alternative to FT DeepDark theme
 
-   - [weechat](https://weechat.org/): irc client
+   - [WeeChat](https://weechat.org/): irc client
 
       - [buffers.pl](https://weechat.org/scripts/source/buffers.pl.html/): sidebar with list of buffers
       - [colorize_nicks.py](https://weechat.org/scripts/source/colorize_nicks.py.html/)
@@ -69,19 +69,19 @@ These are my personal dotfiles for my laptop which is running on [Arch Linux](ht
 
 - Others
 
-   - [pulseaudio](https://www.freedesktop.org/wiki/Software/PulseAudio/): sound system
+   - [PulseAudio](https://www.freedesktop.org/wiki/Software/PulseAudio/): sound system
    - [ranger](http://ranger.nongnu.org/): terminal file manager
    - [thunar](http://docs.xfce.org/xfce/thunar/start): file manager with gui
    - [feh](http://feh.finalrewind.org/): image viewer
    - [vlc](https://www.videolan.org/vlc/): media player
    - [mpv](https://mpv.io/): media player
-   - [stremio](http://www.strem.io/): media center allowing to stream torrents
-   - [webtorrent](https://webtorrent.io/): stremio alternative for open source freaks
-   - [evince](https://wiki.gnome.org/Apps/Evince): document viewer
-   - [libreoffice](https://www.libreoffice.org/): office suite
-   - [transmission](https://www.transmissionbt.com/): bittorent client
+   - [Stremio](http://www.strem.io/): media center allowing to stream torrents
+   - [WebTorrent](https://webtorrent.io/): stremio alternative for open source freaks
+   - [Evince](https://wiki.gnome.org/Apps/Evince): document viewer
+   - [LibreOffice](https://www.libreoffice.org/): office suite
+   - [Transmission](https://www.transmissionbt.com/): bittorent client
    - [uGet](http://ugetdm.com/): download manager
-   - [redshift](http://jonls.dk/redshift): adjust the color temperature according to the position of the sun
+   - [Redshift](http://jonls.dk/redshift): adjust the color temperature according to the position of the sun
 
 ## Hardware
 
