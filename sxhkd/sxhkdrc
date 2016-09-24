@@ -6,6 +6,10 @@
 alt + shift + q
 	exitbox
 
+# Lock screen
+alt + ctrl + l
+	i3lock-fancy
+
 # Close window
 alt + {_,shift +} Escape
 	bspc node -c
@@ -95,23 +99,16 @@ alt + r
     launcher
 
 XF86TouchpadToggle
-	touchpad
+    touchpad
 
-XF86MonBrightnessUp
-	light -A 5
+XF86MonBrightness{Up,Down}
+	light {-A 5, -U 5}
 
-XF86MonBrightnessDown
-	light -U 5
+XF86Audio{RaiseVolume,LowerVolume,Mute}
+	pulseaudio-ctl {up, down, mute}
 
-# Volume Control via pulseaudio-ctl
-XF86AudioRaiseVolume
-    pulseaudio-ctl up
-
-XF86AudioLowerVolume
-    pulseaudio-ctl down
-
-XF86AudioMute
-    pulseaudio-ctl mute
+XF86Audio{Play,Next,Prev}
+    playerctl {play-pause, next, previous}
 
 # make sxhkd reload its configuration files:
 super + F1
