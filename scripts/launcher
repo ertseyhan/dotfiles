@@ -15,8 +15,8 @@ rofi -show drun \
 	 -kb-mode-next Tab \
 	 -display-drun "Run" \
 	 -display-window "Switch to" \
-	 -color-window "#070708, #070708, #070708" \
-	 -color-normal "#070708, #BFBFBF, #070708, #394249, #BFBFBF" \
-	 -color-active "#070708, #BFBFBF, #070708, #394249, #BFBFBF"
+	 -color-window "argb:22070708, argb:11070708, argb:11070708" \
+	 -color-normal "argb:22070708, #BFBFBF, argb:22070708, #394249, #BFBFBF" \
+	 -color-active "argb:22070708, #BFBFBF, argb:22070708, #394249, #BFBFBF"
 
 >/dev/null
