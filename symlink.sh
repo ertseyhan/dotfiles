@@ -10,6 +10,7 @@ sudo mkdir -p /usr/lib/systemd
 ln -s $dotfiles/compton/compton.conf $HOME/.config/.compton.conf
 
 # redshift
+echo "Don't forget to update your latitude/longtitude information in redshift before using it"
 ln -s $dotfles/redshift/redshift.conf $HOME/.config/.redshift.conf
 
 # gtk
