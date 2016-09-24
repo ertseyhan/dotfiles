@@ -19,7 +19,8 @@ cursor_shape = block
 browser = firefox
 
 [colors]
-background = #070708
+#background = #070708
+background = rgba(7, 7, 8, 0.6)
 foreground = #A5A5A5
 foreground_bold = #cccccc
 
