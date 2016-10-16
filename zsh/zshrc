@@ -13,6 +13,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Termite dircolors
 eval $(dircolors ~/.dircolors)
+eval $(thefuck --alias)
 
 source $ZSH_CUSTOM/zsh_aliases
 setopt COMBINING_CHARS
