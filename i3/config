@@ -1,0 +1,196 @@
+# general
+set $mod Mod1
+new_window 1pixel
+floating_modifier $mod
+focus_follows_mouse no
+font pango:DejaVu Sans Mono 8
+
+# keybindings
+## quick launch
+bindsym $mod+Return exec --no-startup-id xterm
+bindsym $mod+ctrl+l exec --no-startup-id i3lock-fancy
+bindsym $mod+r      exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -nb black -sb '#292929' -l 10" --usage-log=${HOME}/.config/i3/dmenu.log
+
+# change focus
+bindsym $mod+j 		focus left
+bindsym $mod+k 		focus down
+bindsym $mod+l 		focus up
+bindsym $mod+semicolon  focus right
+
+# kill focused window
+bindsym $mod+Shift+q kill
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+j move left
+bindsym $mod+Shift+k move down
+bindsym $mod+Shift+l move up
+bindsym $mod+Shift+semicolon move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# tiling
+bindsym $mod+h split h
+bindsym $mod+v split v
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# focus the child container
+bindsym $mod+c focus child
+
+# switch to workspace
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+F1 workspace 6
+bindsym $mod+F2 workspace 7
+bindsym $mod+F3 workspace 8
+bindsym $mod+F4 workspace 9
+bindsym $mod+F5 workspace 10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+F1 move container to workspace 6
+bindsym $mod+Shift+F2 move container to workspace 7
+bindsym $mod+Shift+F3 move container to workspace 8
+bindsym $mod+Shift+F4 move container to workspace 9
+bindsym $mod+Shift+F5 move container to workspace 10
+
+bindsym $mod+Tab workspace back_and_forth
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+# restart i3 inplace
+bindsym $mod+Shift+r restart
+# exit i3
+bindsym $mod+Shift+e exec --no-startup-id "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# resize window
+mode "resize" {
+        bindsym j resize shrink width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym l resize shrink height 10 px or 10 ppt
+        bindsym semicolon resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+d mode "resize"
+
+bar {
+    position top
+    status_command py3status -c ~/.config/i3/i3status.conf
+    
+    colors {
+        focused_workspace #333333 #1B3950 #E8EDF1
+        urgent_workspace  #333333 #5E0707 #E8EDF1
+    }
+}
+
+# colorscheme
+set $dark       #1E3D58
+set $darker     #112332
+set $text       #CAC9C9
+
+# TYPE                   BORDER  BACKGROUND TEXT
+client.focused           $dark   $dark      $text
+client.unfocused         $darker $darker    $text
+client.focused_inactive  $dark   $darker    $text
+client.urgent            $dark   $dark      $text
+
+# color picker
+bindsym $mod+quotedbl exec --no-startup-id "gpick --pick"
+
+# screenshot
+bindsym Print exec --no-startup-id "maim -s | xclip -selection clipboard -t image/png"
+bindsym Ctrl+Print exec --no-startup-id "maim $HOME/Pictures/Screenshots/$(date +%F-%T).png"
+
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pulseaudio-ctl up
+bindsym XF86AudioLowerVolume exec --no-startup-id pulseaudio-ctl down
+bindsym XF86AudioMute exec --no-startup-id pulseaudio-ctl mute
+
+# Sreen brightness controls
+bindsym XF86MonBrightnessUp   exec --no-startup-id light -A 5
+bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
+
+# Media player controls
+bindsym XF86AudioPause exec --no-startup-id playerctl play-pause
+bindsym XF86AudioNext  exec --no-startup-id playerctl next
+bindsym XF86AudioPrev  exec --no-startup-id playerctl previous
+
+for_window [class="feh"]            border none
+for_window [class="Emacs"]	    border none
+for_window [class="^Firefox$"]      border none
+for_window [class="Spotify"]        move to workspace 4
+
+for_window [class="Caffeine"]                             floating enable
+for_window [class="Bleachbit"]                            floating enable
+for_window [class="Xarchiver"]                            floating enable
+for_window [class="Galculator"]                           floating enable
+for_window [class="Pavucontrol"]                          floating enable
+for_window [class="Gedit|Evince"]                         floating enable
+for_window [class="Lxappearance"]                         floating enable
+for_window [class="feh|Vlc|Gpick"]                        floating enable
+for_window [window_type="dialog|menu"]			  floating enable
+for_window [title="About Mozilla Firefox"]		  floating enable
+for_window [class="Pulseaudio-equalizer.py"]              floating enable
+for_window [class="Firefox" instance="Places"]            floating enable
+for_window [class="Firefox" instance="Browser"]           floating enable
+for_window [window_role="pop-up|task_dialog|Preferences"] floating enable
+
+assign [class="Emacs"]		    2
+assign [class="Rambox"]  	    5
+assign [class="KeeWeb"]  	    5
+assign [class="^Firefox$"] 	    1
+assign [class="^discord$"]          6
+assign [class="^Transmission-gtk$"] 7
+
+# startup
+exec --no-startup-id dunst
+exec --no-startup-id caffeine
+exec --no-startup-id numlockx
+exec --no-startup-id syndaemon -h
+exec --no-startup-id setxkbmap -layout tr
+exec --no-startup-id xautolock -locker i3lock-fancy
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
+exec_always --no-startup-id "feh --bg-fill --random Pictures/Wallpapers/" 
+exec_always --no-startup-id "if ! pgrep -x 'syndaemon' > /dev/null; then exec syndaemon -d; fi"
+#exec_always --no-startup-id "while true; do wget -q -o /dev/null -O Pictures/Wallpapers/wp.jpg https://source.unsplash.com/random/1920x1080; feh --bg-fill Pictures/Wallpapers/wp.jpg; sleep 600; done"

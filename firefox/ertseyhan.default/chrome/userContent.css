@@ -1,0 +1,23 @@
+/*
+ * Makes the activity stream page look decent with the dark theme.
+ * Author: Andrei Cristian Petcu, Screenshot: https://imgur.com/a/WcxGk
+ */
+@-moz-document url("about:home"), url("about:newtab") {
+  .activity-stream {
+    background-color: #222222 !important;
+  }
+}
+@-moz-document url("about:blank") {
+  *:empty:not([id]):not([style]) {
+    background-color: #222222 !important;
+  }
+}
+
+/*
+ * Hides the text on DuckDuckGo homepage.
+ */
+@-moz-document domain("duckduckgo.com") {
+   .tag-home {
+        visibility: hidden;
+    }
+}

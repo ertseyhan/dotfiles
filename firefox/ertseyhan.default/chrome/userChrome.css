@@ -1,0 +1,27 @@
+/*
+ * Makes the activity stream page look decent with the dark theme.
+ * Author: Andrei Cristian Petcu, Screenshot: https://imgur.com/a/WcxGk
+ */
+.browserContainer {
+  background-color: var(--url-and-searchbar-background-color, hsla(0,0%,100%,.8)) !important;
+}
+
+#sidebar {
+  background-color: white !important;
+}
+
+.sidebar-placesTree {
+  background-color: white !important;
+}
+
+
+/*
+ * Hide "Recent Highlights" from Library
+ */
+#appMenu-library-recentHighlights {
+    display: none !important;
+}
+
+photonpanelmultiview .subview-subheader {
+    display: none
+}
