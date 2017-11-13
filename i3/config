@@ -95,20 +95,20 @@ bindsym $mod+Shift+e exec --no-startup-id "i3-nagbar -t warning -m 'You pressed 
 
 # resize window
 mode "resize" {
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+    bindsym j resize shrink width 10 px or 10 ppt
+    bindsym k resize grow height 10 px or 10 ppt
+    bindsym l resize shrink height 10 px or 10 ppt
+    bindsym semicolon resize grow width 10 px or 10 ppt
 
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+    # same bindings, but for the arrow keys
+    bindsym Left resize shrink width 10 px or 10 ppt
+    bindsym Down resize grow height 10 px or 10 ppt
+    bindsym Up resize shrink height 10 px or 10 ppt
+    bindsym Right resize grow width 10 px or 10 ppt
 
-        # back to normal: Enter or Escape
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
 }
 
 bindsym $mod+d mode "resize"
@@ -160,16 +160,14 @@ for_window [class="Emacs"]	    border none
 for_window [class="^Firefox$"]      border none
 for_window [class="Spotify"]        move to workspace 4
 
-for_window [class="Caffeine"]                             floating enable
-for_window [class="Bleachbit"]                            floating enable
-for_window [class="Xarchiver"]                            floating enable
-for_window [class="Galculator"]                           floating enable
-for_window [class="Pavucontrol"]                          floating enable
-for_window [class="Gedit|Evince"]                         floating enable
 for_window [class="Lxappearance"]                         floating enable
+for_window [class="Gedit|Evince"]                         floating enable
 for_window [class="feh|Vlc|Gpick"]                        floating enable
 for_window [window_type="dialog|menu"]			  floating enable
+for_window [class="Caffeine|Bleachbit"]                   floating enable
+for_window [class="Xarchiver|Pinentry"]                   floating enable
 for_window [title="About Mozilla Firefox"]		  floating enable
+for_window [class="Pavucontrol|Galculator"]               floating enable
 for_window [class="Pulseaudio-equalizer.py"]              floating enable
 for_window [class="Firefox" instance="Places"]            floating enable
 for_window [class="Firefox" instance="Browser"]           floating enable
@@ -188,6 +186,7 @@ exec --no-startup-id caffeine
 exec --no-startup-id numlockx
 exec --no-startup-id syndaemon -h
 exec --no-startup-id setxkbmap -layout tr
+exec --no-startup-id xrdb -merge .Xresources
 exec --no-startup-id xautolock -locker i3lock-fancy
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
