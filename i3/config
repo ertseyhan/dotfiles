@@ -158,7 +158,7 @@ bindsym XF86AudioPrev  exec --no-startup-id playerctl previous
 for_window [class="feh"]            border none
 for_window [class="Emacs"]	    border none
 for_window [class="^Firefox$"]      border none
-for_window [class="Spotify"]        move to workspace 4
+for_window [class="Spotify"]        move to workspace 6
 
 for_window [class="Lxappearance"]                         floating enable
 for_window [class="Gedit|Evince"]                         floating enable
