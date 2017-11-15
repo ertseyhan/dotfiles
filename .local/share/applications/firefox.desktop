@@ -1,22 +1,21 @@
 [Desktop Entry]
 Version=1.0
-Name=Firefox Beta
-Comment=Browse the Web
-Exec=/opt/firefox-beta/firefox %u
-Icon=firefox-beta
+Name=Firefox
+Exec=/usr/lib/firefox/firefox %u
+Icon=firefox
 Terminal=false
 Type=Application
 MimeType=text/html;text/xml;application/xhtml+xml;application/vnd.mozilla.xul+xml;text/mml;x-scheme-handler/http;x-scheme-handler/https;
 StartupNotify=true
+StartupWMClass=Firefox
 Categories=Network;WebBrowser;
 Keywords=web;browser;internet;
 Actions=new-window;new-private-window;
-StartupWMClass=Firefox Beta
 
 [Desktop Action new-window]
 Name=New Window
-Exec=/opt/firefox-beta/firefox --new-window %u
+Exec=/usr/lib/firefox/firefox --new-window %u
 
 [Desktop Action new-private-window]
 Name=New Private Window
-Exec=/opt/firefox-beta/firefox --private-window %u
+Exec=/usr/lib/firefox/firefox --private-window %u
