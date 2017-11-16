@@ -19,8 +19,10 @@ xterm*backarrowKey:    false
 Xft.dpi: 94
 Xft.rgba: rgb
 Xft.hinting: 1
+Xft.autohint: 0
 Xft.antialias: 1
 Xft.hintstyle: hintfull
+Xft.lcdfilter: lcddefault
 
 ! Blacks
 xterm*color0:     #000000
