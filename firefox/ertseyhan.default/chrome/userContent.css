@@ -21,3 +21,59 @@
         visibility: hidden;
     }
 }
+
+/*
+ * Fix unreadable input fields with dark GTK+ themes
+ */
+input {
+  border: 1px solid grey;
+  background-color: white;
+  color: black;
+  -moz-appearance: none !important;
+}
+
+textarea {
+  border: 1px solid grey;
+  background-color: white;
+  color: black;
+  -moz-appearance: none !important;
+}
+
+/select {
+  background-color: white;
+  color: black;
+  -moz-appearance: none !important;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  background-color: white ! important;
+  color: ThreeDFace ! important;
+}
+
+input[type="checkbox"] {
+  -moz-appearance: checkbox !important;
+}
+
+input[type="radio"] {
+  -moz-appearance: radio !important;
+}
+
+input[type="range"] {
+  border: none;
+  -moz-appearance: range !important;
+}
+
+*|*::-moz-radio {
+  background-color: white;
+}
+
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"] {
+  border: 1px solid grey;
+  background-color: #eeeeee;
+  color: black;
+  -moz-appearance: none !important;
+}
