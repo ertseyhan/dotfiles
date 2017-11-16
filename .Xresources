@@ -1,0 +1,56 @@
+xterm*termName: xterm-256color
+xterm*faceName: Monospace
+xterm*faceSize: 10
+
+xterm*foreground:      #b2b2b2
+xterm*background:      #000000
+xterm*cursorColor:     #b2b2b2
+xterm*cursorBlink:     false
+xterm*dynamicColors:   true
+xterm*fullscreen:      never
+xterm*ScrollBar:       false 
+xterm*SaveLines:       2500
+xterm*scrollTtyOutput: false
+xterm*allowBoldFonts:  false
+xterm*loginshell:      true
+xterm*eightBitInput:   false
+xterm*backarrowKey:    false
+
+Xft.dpi: 94
+Xft.rgba: rgb
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.hintstyle: hintfull
+
+! Blacks
+xterm*color0:     #000000
+xterm*color8:     #686868
+! Reds
+xterm*color1:     #B21818
+xterm*color9:     #FF5454
+! Greens
+xterm*color2:     #18B218
+xterm*color10:    #54FF54
+! Yellows
+xterm*color3:     #B26818
+xterm*color11:    #FFFF54
+! Blues
+xterm*color4:     #1818B2
+xterm*color12:    #5454FF
+! Purples
+xterm*color5:     #B218B2
+xterm*color13:    #FF54FF
+! Cyans
+xterm*color6:     #18B2B2
+xterm*color14:    #54FFFF
+! Whites
+xterm*color7:     #B2B2B2
+xterm*color15:    #FFFFFF
+
+! double-click to select whole URLs
+xterm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+
+xterm*VT100.Translations: #override \
+            Ctrl <Key>C:    copy-selection(CLIPBOARD) \n\
+            Ctrl <Key>V:    insert-selection(CLIPBOARD) \n\
+	    Shift <Btn1Up>: exec-formatted("firefox '%t'", PRIMARY)
