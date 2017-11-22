@@ -2,9 +2,9 @@ xterm*termName: xterm-256color
 xterm*faceName: Monospace
 xterm*faceSize: 10
 
-xterm*foreground:      #b2b2b2
+xterm*foreground:      #D9D9D9
 xterm*background:      #000000
-xterm*cursorColor:     #b2b2b2
+xterm*cursorColor:     #D9D9D9
 xterm*cursorBlink:     false
 xterm*dynamicColors:   true
 xterm*fullscreen:      never
