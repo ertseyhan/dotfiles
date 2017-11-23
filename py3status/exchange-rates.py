@@ -2,6 +2,7 @@ from forex_python.bitcoin   import BtcConverter
 from forex_python.converter import CurrencyRates
 
 class Py3status:
+    cache_timeout = 300
 
     def rates(self):
         usd = CurrencyRates().get_rate('USD', 'TRY')
@@ -10,5 +11,5 @@ class Py3status:
 
         return {
             'full_text': '$: ' + str(usd) + ' €: ' + str(eur) + ' ₿: ' + str(btc),
-            'cached_until': self.py3.CACHE_FOREVER
+            'cached_until': self.py3.time_in(self.cache_timeout)
         }
