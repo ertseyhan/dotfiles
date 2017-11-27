@@ -52,7 +52,9 @@ xterm*color15:    #FFFFFF
 ! double-click to select whole URLs
 xterm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
 
+xterm*ttyModes: erase ^?
+xterm*backarrowKeyIsErase: true
 xterm*VT100.Translations: #override \
-            Ctrl <Key>C:    copy-selection(CLIPBOARD) \n\
-            Ctrl <Key>V:    insert-selection(CLIPBOARD) \n\
-	    Shift <Btn1Up>: exec-formatted("firefox '%t'", PRIMARY)
+            Shift Ctrl<Key>C: copy-selection(CLIPBOARD) \n\
+            Shift Ctrl<Key>V: insert-selection(CLIPBOARD) \n\
+            Shift <Btn1Up>: exec-formatted("firefox '%t'", PRIMARY)
