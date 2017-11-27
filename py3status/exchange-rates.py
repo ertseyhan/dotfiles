@@ -2,7 +2,7 @@ from forex_python.bitcoin   import BtcConverter
 from forex_python.converter import CurrencyRates
 
 class Py3status:
-    cache_timeout = 300
+    cache_timeout = 600
 
     def rates(self):
         usd = CurrencyRates().get_rate('USD', 'TRY')
