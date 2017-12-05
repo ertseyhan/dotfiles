@@ -157,7 +157,6 @@ bindsym XF86AudioPrev  exec --no-startup-id playerctl previous
 
 for_window [class="feh"]            border none
 for_window [class="Emacs"]          border none
-for_window [class="^Firefox$"]      border none
 for_window [class="Spotify"]        move to workspace 6
 
 for_window [class="feh|Vlc|Gpick"]                        floating enable
@@ -177,8 +176,8 @@ assign [class="Emacs"]              2
 assign [class="Rambox"]             5
 assign [class="KeeWeb"]             5
 assign [class="Firefox"]            1
-assign [class="^discord$"]          6
-assign [class="^Transmission-gtk$"] 7
+assign [class="discord"]            6
+assign [class="Transmission-gtk"]   7
 
 # startup
 exec --no-startup-id dunst
