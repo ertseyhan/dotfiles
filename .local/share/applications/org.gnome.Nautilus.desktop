@@ -1,6 +1,5 @@
 [Desktop Entry]
 Name=Files
-GenericName=Nautilus
 Keywords=folder;manager;explore;disk;filesystem;
 Exec=nautilus --new-window %U
 Icon=org.gnome.Nautilus
