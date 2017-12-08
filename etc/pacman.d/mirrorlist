@@ -1,7 +1,4 @@
 # Arch Linux repository mirrorlist
-# Turkey
-Server = ftp://ftp.linux.org.tr/archlinux/$repo/os/$arch
-
 ### Switzerland
 Server = https://pkg.adfinis-sygroup.ch/archlinux/$repo/os/$arch
 
