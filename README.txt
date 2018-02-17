@@ -5,7 +5,7 @@
               `+oooooo:
               -+oooooo+:             ertseyhan@arch
             `/:-:++oooo+:            Kernel: x86_64 Linux 4.15.3-2-ARCH
-           `/++++/+++++++:           Shell: bash 4.4.18
+           `/++++/+++++++:           Shell: bash-4.4.019-1
           `/++++++++++++++:          WM: i3
          `/+++ooooooooooooo/`        GTK Theme: Vertex-Dark [GTK2/3]
         ./ooosssso++osssssso+`       Icon Theme: Arc
