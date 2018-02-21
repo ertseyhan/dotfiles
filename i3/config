@@ -116,7 +116,7 @@ bindsym $mod+d mode "resize"
 bar {
     position top
     status_command py3status -c ~/.config/i3/i3status.conf
-    
+
     colors {
         focused_workspace #333333 #1B3950 #E8EDF1
         urgent_workspace  #333333 #5E0707 #E8EDF1
@@ -151,9 +151,8 @@ bindsym XF86MonBrightnessUp   exec --no-startup-id light -A 5
 bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
 
 # Media player controls
-bindsym XF86AudioPause exec --no-startup-id playerctl play-pause
-bindsym XF86AudioNext  exec --no-startup-id playerctl next
-bindsym XF86AudioPrev  exec --no-startup-id playerctl previous
+bindsym XF86AudioNext  exec --no-startup-id $HOME/.config/i3/playerctl next
+bindsym XF86AudioPause exec --no-startup-id $HOME/.config/i3/playerctl play-pause
 
 for_window [class="feh"]            border none
 for_window [class="Emacs"]          border none
