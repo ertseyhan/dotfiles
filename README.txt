@@ -4,7 +4,7 @@
                `+oooo:
               `+oooooo:
               -+oooooo+:             ertseyhan@arch
-            `/:-:++oooo+:            Kernel: x86_64 Linux
+            `/:-:++oooo+:            Kernel: x86_64 Linux LTS
            `/++++/+++++++:           Shell: bash
           `/++++++++++++++:          WM: i3
          `/+++ooooooooooooo/`        GTK Theme: Vertex-Dark [GTK2/3]
