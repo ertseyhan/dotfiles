@@ -10,12 +10,10 @@ Server = https://archlinux.mirror.wearetriple.com/$repo/os/$arch
 
 ## Germany
 Server = https://arch.32g.eu/$repo/os/$arch
-Server = https://fabric-mirror.vps.hosteurope.de/archlinux/$repo/os/$arch
 Server = https://mirror.bethselamin.de/$repo/os/$arch
 Server = https://arch.eckner.net/archlinux/$repo/os/$arch
 Server = https://mirror.f4st.host/archlinux/$repo/os/$arch
 Server = https://ftp.fau.de/archlinux/$repo/os/$arch
-Server = https://mirror.fluxent.de/archlinux/$repo/os/$arch
 Server = https://mirror.hactar.xyz/$repo/os/$arch
 Server = https://repo.itmettke.de/archlinux/$repo/os/$arch
 Server = https://mirror.jankoppe.de/archlinux/$repo/os/$arch
@@ -34,6 +32,5 @@ Server = https://ftp.halifax.rwth-aachen.de/archlinux/$repo/os/$arch
 Server = https://ftp.spline.inf.fu-berlin.de/mirrors/archlinux/$repo/os/$arch
 Server = https://archlinux.thaller.ws/$repo/os/$arch
 Server = https://archlinux.thelinuxnetworx.rocks/$repo/os/$arch
-Server = https://archmirror.tomforb.es/$repo/os/$arch
 Server = https://mirror.ubrco.de/archlinux/$repo/os/$arch
 Server = https://ftp.wrz.de/pub/archlinux/$repo/os/$arch
