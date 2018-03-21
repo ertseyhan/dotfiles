@@ -116,7 +116,7 @@ bindsym $mod+d mode "resize"
 bar {
     position top
     status_command py3status -c ~/.config/i3/i3status.conf
-
+ 
     colors {
         focused_workspace #333333 #1B3950 #E8EDF1
         urgent_workspace  #333333 #5E0707 #E8EDF1
@@ -153,6 +153,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
 # Media player controls
 bindsym XF86AudioNext  exec --no-startup-id $HOME/.config/i3/playerctl next
 bindsym XF86AudioPause exec --no-startup-id $HOME/.config/i3/playerctl play-pause
+bindsym XF86AudioPrev  exec --no-startup-id $HOME/.config/i3/playerctl previous
 
 for_window [class="feh"]            border none
 for_window [class="Emacs"]          border none
@@ -186,6 +187,6 @@ exec --no-startup-id setxkbmap -layout tr
 exec --no-startup-id xrdb -merge .Xresources
 exec --no-startup-id xautolock -locker i3lock-fancy
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id "if ! pgrep -x 'syndaemon' > /dev/null; then exec syndaemon -d; fi"
 
-exec_always --no-startup-id "feh --bg-fill --random Pictures/Wallpapers/" 
-exec_always --no-startup-id "if ! pgrep -x 'syndaemon' > /dev/null; then exec syndaemon -d; fi"
+exec_always --no-startup-id "feh --bg-fill --random Pictures/Wallpapers/wp.png" 
