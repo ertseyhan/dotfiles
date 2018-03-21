@@ -84,6 +84,7 @@ irssi
 jack
 java-rhino
 jfsutils
+jq
 jre9-openjdk
 less
 lib32-mesa
