@@ -124,7 +124,7 @@ bar {
 }
 
 # colorscheme
-set $dark       #1E3D58
+set $dark       #2C5A81
 set $darker     #112332
 set $text       #CAC9C9
 
