@@ -114,7 +114,7 @@ mode "resize" {
 bindsym $mod+d mode "resize"
 
 bar {
-    position top
+    position bottom
     status_command py3status -c ~/.config/i3/i3status.conf
  
     colors {
