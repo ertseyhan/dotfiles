@@ -1,4 +1,3 @@
-adobe-source-sans-pro-fonts
 aic94xx-firmware
 alsa-utils
 arc-icon-theme

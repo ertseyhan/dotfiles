@@ -1,5 +1,3 @@
-acestream-engine
-acestream-launcher
 aic94xx-firmware
 caffeine
 cower
