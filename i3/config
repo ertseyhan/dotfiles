@@ -167,6 +167,7 @@ for_window [class="Atril|Pinentry|Gedit"]                 floating enable
 for_window [title="About Mozilla Firefox"]                floating enable
 for_window [class="Pavucontrol|Galculator"]               floating enable
 for_window [class="Pulseaudio-equalizer.py"]              floating enable
+for_window [class="Org.gnome.SoundRecorder"]              floating enable
 for_window [class="File-roller|Lxappearance"]             floating enable
 for_window [class="Firefox" instance="Places"]            floating enable
 for_window [class="Firefox" instance="Browser"]           floating enable
