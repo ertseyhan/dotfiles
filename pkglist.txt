@@ -22,6 +22,7 @@ cmus
 coreutils
 cryptsetup
 customizepkg
+darkhttpd
 device-mapper
 dhcpcd
 dialog
