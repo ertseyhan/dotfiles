@@ -146,6 +146,7 @@ mtools
 mythes-en
 nano
 nautilus
+net-tools
 netctl
 networkmanager
 nmap
