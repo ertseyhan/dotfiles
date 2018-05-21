@@ -14,7 +14,7 @@
 }
 
 /*
- * Hides the text on DuckDuckGo homepage.
+ * Hide text and menu items on DuckDuckGo.
  */
 @-moz-document domain("duckduckgo.com") {
    .tag-home {
@@ -23,6 +23,11 @@
 
     .header--aside__item {
         visibility: hidden;
+    }
+
+    a#logo_homepage_link.logo_homepage {
+        cursor: default;
+        pointer-events: none;
     }
 }
 
