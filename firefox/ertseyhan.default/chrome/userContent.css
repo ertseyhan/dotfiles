@@ -20,6 +20,10 @@
    .tag-home {
         visibility: hidden;
     }
+
+    .header--aside__item {
+        visibility: hidden;
+    }
 }
 
 /*
