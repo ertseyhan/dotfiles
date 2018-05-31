@@ -1,4 +1,5 @@
 aic94xx-firmware
+alsa-plugins
 alsa-utils
 arc-icon-theme
 archiso
@@ -10,14 +11,18 @@ automake
 bash
 bash-completion
 bdf-unifont
+bind-tools
 binutils
 bison
 bleachbit
 bluez
+bluez-tools
 bluez-utils
 bzip2
 caffeine
+cheese
 chromium
+cloc
 cmus
 coreutils
 cryptsetup
@@ -31,6 +36,7 @@ discord
 dosfstools
 dunst
 e2fsprogs
+ed
 efibootmgr
 emacs
 ethtool
@@ -45,6 +51,7 @@ findutils
 firefox
 flashplugin
 flex
+freerdp
 freetype2
 fuse2
 galculator
@@ -57,6 +64,8 @@ ghostscript
 gimp
 git
 glibc
+gnome-icon-theme
+gnome-icon-theme-symbolic
 gnome-keyring
 gnome-sound-recorder
 gnome-themes-extra
@@ -175,6 +184,7 @@ pepper-flash
 perl
 perl-image-exiftool
 perl-json
+pinta
 pkg-config
 pkgfile
 pkgstats
@@ -210,9 +220,11 @@ qt4
 qt5-styleplugins
 qt5ct
 rambox-bin
+rdesktop
 reiserfsprogs
 rsync
 ruby
+ruby-rake
 ruby-rdoc
 s-nail
 screenfetch
@@ -225,6 +237,7 @@ smbclient
 spotify
 strace
 sudo
+swh-plugins
 sysfsutils
 systemd
 systemd-sysvcompat
@@ -233,9 +246,13 @@ task
 teamviewer-beta
 texinfo
 thunderbird
+tig
+tiger
 tk
 tlp
 tor
+traceroute
+translate-shell
 transmission-cli
 transmission-gtk
 ttf-anonymous-pro
