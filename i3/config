@@ -188,6 +188,6 @@ exec --no-startup-id setxkbmap -layout tr
 exec --no-startup-id xrdb -merge .Xresources
 exec --no-startup-id xautolock -locker i3lock-fancy
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id "if ! pgrep -x 'syndaemon' > /dev/null; then exec syndaemon -d; fi"
+#exec --no-startup-id "if ! pgrep -x 'syndaemon' > /dev/null; then exec syndaemon -d; fi"
 
 exec_always --no-startup-id "feh --bg-fill --random Pictures/Wallpapers/wp.png" 
