@@ -138,8 +138,9 @@ client.urgent            $dark   $dark      $text
 bindsym $mod+quotedbl exec --no-startup-id "gpick --pick"
 
 # screenshot
-bindsym Print exec --no-startup-id "maim -s | xclip -selection clipboard -t image/png"
-bindsym Ctrl+Print exec --no-startup-id "maim -s $HOME/Pictures/$(date +%F-%H%M%S).png"
+bindsym Print exec --no-startup-id "flameshot gui"
+#bindsym Print exec --no-startup-id "maim -s | xclip -selection clipboard -t image/png"
+#bindsym Ctrl+Print exec --no-startup-id "maim -s $HOME/Pictures/$(date +%F-%H%M%S).png"
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pulseaudio-ctl up
