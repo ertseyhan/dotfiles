@@ -5,6 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+alias rm="rm -i"
 alias ..="cd .."
 alias ...="cd ../.."
 alias diff="colordiff"
@@ -20,6 +21,6 @@ fi
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export HISTCONTROL=ignoredups
 
-PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin:$HOME/.local/bin"
 
 PS1="\[\033[38;0;32m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\h:\[$(tput sgr0)\]\[\033[38;5;6m\][\w]:\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
