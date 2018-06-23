@@ -1,0 +1,15 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Dia Diagram Editor
+Comment=Edit your Diagrams
+Type=Application
+Exec=dia --integrated %F
+Icon=dia
+Terminal=false
+Categories=GNOME;Graphics;
+StartupNotify=true
+MimeType=application/x-dia-diagram;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=dia
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Version=@0.97.3@

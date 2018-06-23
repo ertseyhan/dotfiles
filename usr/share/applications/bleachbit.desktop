@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=BleachBit
+Comment=Free space and maintain privacy
+TryExec=bleachbit
+Exec=bleachbit
+Icon=bleachbit
+Categories=GTK;System;
+StartupNotify=true
