@@ -1,8 +1,8 @@
 aic94xx-firmware
 caffeine
 cower
+dcadec
 ffmpeg-compat-54
-gegl02
 i3lock-fancy-git
 j4-dmenu-desktop
 jmtpfs
@@ -13,7 +13,6 @@ libc++
 libc++abi
 light
 obfsproxy
-pacaur
 package-query
 pulseaudio-ctl
 pulseaudio-equalizer-ladspa
@@ -26,8 +25,10 @@ rambox-bin
 spotify
 teamviewer-beta
 tiger
+ttf-symbola
 vertex-themes
 visual-studio-code-bin
 wd719x-firmware
 webtorrent-desktop-bin
+xrectsel
 yaourt
