@@ -1,0 +1,10 @@
+[user]
+    name = Ertuğrul Seyhan
+    email = 4480721+ertseyhan@users.noreply.github.com
+
+[github]
+    user = ertseyhan
+
+[alias]
+    who = shortlog --numbered --summary --email --no-merges
+    change-commits = "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [[ \\\"$`echo $VAR`\\\" = '$OLD' ]]; then export $VAR='$NEW'; fi\" $@; }; f "
