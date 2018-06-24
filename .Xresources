@@ -52,6 +52,9 @@ xterm*color15:    #FFFFFF
 ! double-click to select whole URLs
 xterm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
 
+! Make 'Alt' key behave as on other terminal emulators
+XTerm.vt100.metaSendsEscape: true
+
 xterm*ttyModes: erase ^?
 xterm*backarrowKeyIsErase: true
 xterm*VT100.Translations: #override \
