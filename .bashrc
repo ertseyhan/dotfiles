@@ -5,22 +5,25 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias rm="rm -i"
-alias ..="cd .."
-alias ...="cd ../.."
-alias diff="colordiff"
-alias emacs="emacs -nw"
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
-alias screencast='ffmpeg -f x11grab -r 30 -s 1920x1080 -i :0.0 -vcodec libx264 -threads 0 ~/Videos/Video.mkv'
-
 if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
-export QT_QPA_PLATFORMTHEME="qt5ct"
-export HISTCONTROL=ignoredups
-
 PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin:$HOME/.local/bin"
+
+# aliases
+if [ -f ~/.bash_aliases ]; then
+  source ~/.bash_aliases
+fi
+
+# defaults
+if [ -f ~/.bash_defaults ]; then
+  source ~/.bash_defaults
+fi
+
+# exports
+if [ -f ~/.bash_exports ]; then
+  source ~/.bash_exports
+fi
 
 PS1="\[\033[38;0;32m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\h:\[$(tput sgr0)\]\[\033[38;5;6m\][\w]:\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"

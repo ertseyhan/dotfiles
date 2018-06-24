@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#
+# .bash_defaults
+#
+
+# Automatically correct mistyped directory names on cd
+shopt -s cdspell;

@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#
+# .bash_exports
+#
+
+# Set vim as default editor instead of vi
+export EDITOR="vim"
+
+# Increate the maximum number of commands to remember
+export HISTSIZE=10000
+
+# Increate the maximum number of lines in the history file
+export HISTFILESIZE=10000
+
+# Do not write duplicate commands to history
+export HISTCONTROL=ignoredups
+
+# Uniform look for Qt and GTK applications
+export QT_QPA_PLATFORMTHEME="qt5ct"
