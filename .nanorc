@@ -1,6 +1,6 @@
-set const
 set nowrap
 set tabsize 4
+set constantshow
 include /usr/share/nano/lua.nanorc
 include /usr/share/nano/awk.nanorc
 include /usr/share/nano/autoconf.nanorc
