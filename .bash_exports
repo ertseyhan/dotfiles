@@ -7,10 +7,10 @@
 # Set vim as default editor instead of vi
 export EDITOR="vim"
 
-# Increate the maximum number of commands to remember
+# Increase the maximum number of commands to remember
 export HISTSIZE=10000
 
-# Increate the maximum number of lines in the history file
+# Increase the maximum number of lines in the history file
 export HISTFILESIZE=10000
 
 # Do not write duplicate commands to history
