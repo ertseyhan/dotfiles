@@ -4,6 +4,9 @@
 # ~/.bash_aliases
 #
 
+# List the contents of a directory
+alias ll="ls -l"
+
 # use the predefined math routines
 alias bc="bc -l"
 
@@ -14,9 +17,6 @@ alias rm="rm -i"
 # file system navigation
 alias ..="cd .."
 alias ...="cd ../.."
-
-# show number lines on cat output
-alias cat="cat -n"
 
 # Continue getting a partially
 # downloaded file.
