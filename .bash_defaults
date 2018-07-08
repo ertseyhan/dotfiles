@@ -6,3 +6,6 @@
 
 # Automatically correct mistyped directory names on cd
 shopt -s cdspell;
+
+# Extended Pattern Matching
+shopt -s extglob
