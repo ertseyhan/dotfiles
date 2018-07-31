@@ -10,7 +10,6 @@ if [ -f /etc/bash_completion ]; then
 fi
 
 # start the ssh agent automatically
-
 SSH_ENV=$HOME/.ssh/environment
 function start_agent {
     /usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
