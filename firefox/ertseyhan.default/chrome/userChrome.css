@@ -25,10 +25,3 @@
 photonpanelmultiview .subview-subheader {
     display: none
 }
-
-/* Remove New Tab Flash */
-@-moz-document url(chrome://browser/content/browser.xul) {
-  browser[type="content-primary"], tabbrowser tabpanels, #appcontent > #content {
-    background: #222222 !important;
-  }
-}

@@ -31,14 +31,6 @@
     }
 }
 
-/* Remove New Tab Flash */
-@-moz-document url(about:blank), url(about:newtab) {
-    #newtab-window,
-    html {
-        background: #222222;
-    }
-}
-
 /*
  * Fix unreadable input fields with dark GTK+ themes
  */
