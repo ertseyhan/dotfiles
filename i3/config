@@ -4,12 +4,14 @@ new_window 1pixel
 floating_modifier $mod
 focus_follows_mouse no
 font pango:DejaVu Sans Mono 8
+set $exec exec --no-startup-id
 
 # keybindings
 ## quick launch
-bindsym $mod+Return exec --no-startup-id xterm
-bindsym $mod+ctrl+l exec --no-startup-id i3lock-fancy
-bindsym $mod+r      exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -nb black -sb '#292929' -l 10" --usage-log=${HOME}/.config/i3/dmenu.log
+bindsym $mod+Return      $exec xterm
+bindsym $mod+ctrl+Return $exec xterm; $exec "bash -c 'sleep 0.07s; i3-msg floating enable; i3-msg resize set 960px 560px; i3-msg move position 960px 0px'"
+bindsym $mod+ctrl+l      $exec i3lock-fancy
+bindsym $mod+r           $exec j4-dmenu-desktop --dmenu="dmenu -i -nb black -sb '#292929' -l 10" --usage-log=${HOME}/.config/i3/dmenu.log
 
 # change focus
 bindsym $mod+j 		focus left
@@ -91,7 +93,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace
 bindsym $mod+Shift+r restart
 # exit i3
-bindsym $mod+Shift+e exec --no-startup-id "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e $exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window
 mode "resize" {
@@ -116,7 +118,7 @@ bindsym $mod+d mode "resize"
 bar {
     position bottom
     status_command py3status -c ~/.config/i3/i3status.conf
- 
+
     colors {
         focused_workspace #333333 #1B3950 #E8EDF1
         urgent_workspace  #333333 #5E0707 #E8EDF1
@@ -135,26 +137,26 @@ client.focused_inactive  $dark   $darker    $text
 client.urgent            $dark   $dark      $text
 
 # color picker
-bindsym $mod+quotedbl exec --no-startup-id "gpick --pick"
+bindsym $mod+quotedbl $exec "gpick --pick"
 
 # screenshot
-bindsym Print exec --no-startup-id "flameshot gui"
-#bindsym Print exec --no-startup-id "maim -s | xclip -selection clipboard -t image/png"
-#bindsym Ctrl+Print exec --no-startup-id "maim -s $HOME/Pictures/$(date +%F-%H%M%S).png"
+bindsym Print $exec       "flameshot gui"
+#bindsym Print $exec      "maim -s | xclip -selection clipboard -t image/png"
+#bindsym Ctrl+Print $exec "maim -s $HOME/Pictures/$(date +%F-%H%M%S).png
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pulseaudio-ctl up
-bindsym XF86AudioLowerVolume exec --no-startup-id pulseaudio-ctl down
-bindsym XF86AudioMute exec --no-startup-id pulseaudio-ctl mute
+bindsym XF86AudioRaiseVolume $exec pulseaudio-ctl up
+bindsym XF86AudioLowerVolume $exec pulseaudio-ctl down
+bindsym XF86AudioMute        $exec pulseaudio-ctl mute
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp   exec --no-startup-id light -A 5
-bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
+bindsym XF86MonBrightnessUp   $exec light -A 5
+bindsym XF86MonBrightnessDown $exec light -U 5
 
 # Media player controls
-bindsym XF86AudioNext  exec --no-startup-id $HOME/.config/i3/playerctl next
-bindsym XF86AudioPause exec --no-startup-id $HOME/.config/i3/playerctl play-pause
-bindsym XF86AudioPrev  exec --no-startup-id $HOME/.config/i3/playerctl previous
+bindsym XF86AudioNext  $exec $HOME/.config/i3/playerctl next
+bindsym XF86AudioPause $exec $HOME/.config/i3/playerctl play-pause
+bindsym XF86AudioPrev  $exec $HOME/.config/i3/playerctl previous
 
 for_window [class="feh"]            border none
 for_window [class="Emacs"]          border none
@@ -182,14 +184,14 @@ assign [class="discord"]            6
 assign [class="Transmission-gtk"]   7
 
 # startup
-exec --no-startup-id dunst
-exec --no-startup-id caffeine
-exec --no-startup-id numlockx
-exec --no-startup-id flameshot
-exec --no-startup-id setxkbmap -layout tr
-exec --no-startup-id xrdb -merge .Xresources
-exec --no-startup-id xautolock -locker i3lock-fancy
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-#exec --no-startup-id "if ! pgrep -x 'syndaemon' > /dev/null; then exec syndaemon -d; fi"
+$exec dunst
+$exec caffeine
+$exec numlockx
+$exec flameshot
+$exec setxkbmap -layout tr
+$exec xrdb -merge .Xresources
+$exec xautolock -locker i3lock-fancy
+$exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+#$exec "if ! pgrep -x 'syndaemon' > /dev/null; then exec syndaemon -d; fi"
 
-exec_always --no-startup-id "feh --bg-fill --random Pictures/Wallpapers/wp.png" 
+exec_always --no-startup-id "feh --bg-fill Pictures/Wallpapers/wp.png"
