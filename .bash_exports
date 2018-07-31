@@ -13,6 +13,9 @@ export HISTSIZE=10000
 # Increase the maximum number of lines in the history file
 export HISTFILESIZE=10000
 
+# Show time stamps in bash history
+export HISTTIMEFORMAT="%d/%m/%y %T "
+
 # Do not write duplicate commands to history
 export HISTCONTROL=ignoredups
 
