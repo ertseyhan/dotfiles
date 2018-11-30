@@ -9,7 +9,8 @@ set $exec exec --no-startup-id
 # keybindings
 ## quick launch
 bindsym $mod+Return      $exec xterm
-bindsym $mod+ctrl+Return $exec xterm; $exec "bash -c 'sleep 0.07s; i3-msg floating enable; i3-msg resize set 960px 560px; i3-msg move position 960px 0px'"
+bindsym $mod+ctrl+Return $exec xterm; \
+                         $exec "bash -c 'sleep 0.1s; i3-msg floating enable; i3-msg resize set 960px 560px; i3-msg move position 960px 0px'"
 bindsym $mod+ctrl+l      $exec i3lock-fancy
 bindsym $mod+r           $exec j4-dmenu-desktop --dmenu="dmenu -i -nb black -sb '#292929' -l 10" --usage-log=${HOME}/.config/i3/dmenu.log
 
@@ -117,7 +118,7 @@ bindsym $mod+d mode "resize"
 
 bar {
     position bottom
-    status_command py3status -c ~/.config/i3/i3status.conf
+    status_command py3status -n 1 -c ~/.config/i3/i3status.conf
 
     colors {
         focused_workspace #333333 #1B3950 #E8EDF1
@@ -140,9 +141,7 @@ client.urgent            $dark   $dark      $text
 bindsym $mod+quotedbl $exec "gpick --pick"
 
 # screenshot
-bindsym Print $exec       "flameshot gui"
-#bindsym Print $exec      "maim -s | xclip -selection clipboard -t image/png"
-#bindsym Ctrl+Print $exec "maim -s $HOME/Pictures/$(date +%F-%H%M%S).png
+bindsym Print $exec "flameshot gui"
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume $exec pulseaudio-ctl up
@@ -169,8 +168,8 @@ for_window [class="Viewnior|Bleachbit"]                   floating enable
 for_window [title="About Mozilla Firefox"]                floating enable
 for_window [class="Atril|Pinentry|Leafpad"]               floating enable
 for_window [class="Pavucontrol|Galculator"]               floating enable
-for_window [class="Pulseaudio-equalizer.py"]              floating enable
 for_window [class="Org.gnome.SoundRecorder"]              floating enable
+for_window [class="Pulseaudio-equalizer-gtk"]             floating enable
 for_window [class="File-roller|Lxappearance"]             floating enable
 for_window [class="Firefox" instance="Places"]            floating enable
 for_window [class="Firefox" instance="Browser"]           floating enable
@@ -185,6 +184,7 @@ assign [class="Transmission-gtk"]   7
 
 # startup
 $exec dunst
+$exec compton
 $exec caffeine
 $exec numlockx
 $exec flameshot
@@ -194,4 +194,4 @@ $exec xautolock -locker i3lock-fancy
 $exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #$exec "if ! pgrep -x 'syndaemon' > /dev/null; then exec syndaemon -d; fi"
 
-exec_always --no-startup-id "feh --bg-fill Pictures/Wallpapers/wp.png"
+exec_always --no-startup-id "feh --bg-fill --random Pictures/Wallpapers/wp.png"
