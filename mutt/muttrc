@@ -1,0 +1,40 @@
+#
+## Gmail Configuration
+#
+set smtp_url = "smtps://<username>@gmail.com@smtp.gmail.com:465/"
+set smtp_pass = "<password>"
+set imap_user = "<username>@gmail.com"
+set imap_pass = "<password>"
+set folder = "imaps://imap.gmail.com:993"
+set spoolfile = "+INBOX"
+set ssl_starttls = yes
+set ssl_force_tls = yes
+
+set editor = "vim"
+set charset = "utf-8"
+set record = ''
+
+set folder            = ~/.mutt/mail
+set message_cachedir  = ~/.cache/mutt/bodies
+set header_cache      = ~/.cache/mutt/headers
+
+set sort = threads
+set uncollapse_jump
+set sort_aux = reverse-last-date-received
+set index_format = "%4C %Z %{%D %b %H:%M} %32.32t (%?l?%l&%c?) %s"
+
+set timeout = 15      # idle time before scanning
+set mail_check = 60   # minimum time between scans
+set smart_wrap       # wrap long lines
+set nostrict_threads # fuzzy threading
+
+# G to get mail
+bind index g imap-fetch-mail
+
+# Ctrl-R to mark all as read
+macro index \Cr "T~U<enter><tag-prefix><clear-flag>N<untag-pattern>.<enter>" "mark all messages as read"
+
+# Color scheme
+source ~/.mutt/colors
+
+push V

@@ -1,0 +1,16 @@
+color normal        white       default
+color attachment    yellow      default
+color hdrdefault    white       default
+color indicator     black       white
+color markers       white       default
+color quoted        green       default
+color signature     white       default
+color status        white       default
+color tilde         white       default
+color tree          white       default
+
+# identifies email addresses
+color body  brightred default [\-\.+_a-zA-Z0-9]+@[\-\.a-zA-Z0-9]+
+
+# identifies URLs
+color body  brightblue default (https?|ftp)://[\-\.,/%~_:?&=\#a-zA-Z0-9]+
